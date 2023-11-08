@@ -26,3 +26,14 @@ ulEL.innerHTML = resultLis;
 // sudeti skaicius nuo 1 iki 10
 // irasyti i html rezultata
 // irasyti kiekvieno zingsnio suma
+
+let sumNumber = 0;
+let outputSum = document.querySelector("#output");
+let outputText = "";
+for (let i = 1; i <= 10; i++) {
+  sumNumber = sumNumber + i;
+
+  outputText += `<p>${sumNumber}</p>`;
+}
+outputSum.innerHTML = outputText;
+console.log("sumNumber ===", sumNumber);
